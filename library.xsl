@@ -15,6 +15,7 @@
     <xsl:sort select="name"/>
     <xsl:if test="user_id &gt; 220000">
     <tr>
+      <td><xsl:value-of select="name"/></td>
 <xsl:choose>
        <xsl:when test="user_id &gt; 220004">
           <td bgcolor="#ff00ff">
