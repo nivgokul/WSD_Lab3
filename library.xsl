@@ -8,15 +8,13 @@
 <xsl:apply-templates/>
   <table border="1">
     <tr bgcolor="#9acd32">
-      <th style="text-align:center">name</th>
-      <th style="text-align:center">fav_book</th>
+      <th style="text-align:center">Name</th>
+      <th style="text-align:center">Favourite Book</th>
     </tr>
     <xsl:for-each select="library/user">
     <xsl:sort select="name"/>
     <xsl:if test="user_id &gt; 220000">
     <tr>
-      <td><xsl:value-of select="name"/></td>
-      <td><xsl:value-of select="fav_book"/></td>
 <xsl:choose>
        <xsl:when test="user_id &gt; 220004">
           <td bgcolor="#ff00ff">
